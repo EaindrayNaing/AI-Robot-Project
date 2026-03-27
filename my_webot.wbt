@@ -1,0 +1,85 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/solids/protos/SolidBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/animals/protos/Dog.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.24375152396923216 0.7534271597962298 0.6106821672884046 0.9743762101299437
+  position -1.7303870495603486 -0.9724462356337875 2.0617751788960796
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0.05 0 0
+  rotation 0 0 1 4.692820414042842e-06
+}
+SolidBox {
+  translation -0.191383 -0.295168 0.04
+  rotation -9.58981e-09 2.56957e-09 -1 2.618
+  name "green"
+  size 0.3 0.3 0.1
+  appearance PBRAppearance {
+    baseColor 0 1 0
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/default/worlds/textures/tagged_wall.jpg"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+E-puck {
+  hidden position_0_0 11947.421924063174
+  hidden position_0_1 13610.417680006532
+  hidden rotation_1 0 -1 0 3.1965301923997598
+  hidden rotation_2 0 0.9999999999999999 0 1.0383046555481552
+  translation 0.046383 0.455748 -0.000856259
+  rotation 0.002545081573746966 0.0014483768462317202 0.9999957123729553 -1.694668881276785
+  controller "combine_color_capture"
+}
+Dog {
+  translation 0.36264 0.335075 -7.20133e-08
+  rotation -9.59014e-09 -1.2728e-07 1 -1.0472053071795866
+  scale 0.2
+}
+SolidBox {
+  translation 0.370504 -0.330768 0.05
+  rotation 0 0 1 -1.5708053071795867
+  name "red"
+  size 0.3 0.3 0.1
+  appearance PBRAppearance {
+    baseColor 1 0 0
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/default/worlds/textures/tagged_wall.jpg"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation -0.239463 0.29497 0.06
+  rotation 0 0 1 -1.047195307179586
+  name "blue"
+  size 0.3 0.3 0.1
+  appearance PBRAppearance {
+    baseColor 0 0 1
+    baseColorMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/default/worlds/textures/tagged_wall.jpg"
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
